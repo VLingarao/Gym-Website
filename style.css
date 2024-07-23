@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background: #212121;
+}
+
+nav{
+    background: white;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/*Media Quries- Mobile frist Approach*/
+
+@media (min-width:300px){
+
+nav img{
+    height: 5vh;
+    width: auto;
+    margin-right: 1rem;
+    }
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0;
+}
+nav h3{
+    color: black;
+    font-weight: bolder;
+}
+
+.one h4,p{
+    text-align: center;
+    padding: 1.5vh 0;
+}
+
+.one h4{
+    margin-top: 5vh;
+}
+
+.one img{
+    padding-top: 3vh;
+}
+
+.two{
+    background: white;
+    padding: 1.5rem;
+    width: 70%;
+    margin: 5vh auto;
+    border-radius: 12px;
+}
+
+.two label{
+    color: black;
+    font-size: 1.1rem;
+}
+
+.two input[type="text"]{
+    border: none;
+    padding: 0.8rem;
+    outline: none;
+    border-bottom: 1px solid #212121;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+.two input[type="radio"], input[type="checkbox"]{
+    margin-right: 1rem;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.checkboxs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.button{
+    background: #212121;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    width: 90%;
+    padding: 0.9rem;
+    border-radius: 12px;
+    margin-top: 3vh
+}
+
+.list{
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.card{
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.segmentA{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.segmentA h3{
+    color: #212121;
+    text-align: center;
+    padding-top: 4vh;
+}
+
+.segmentA img{
+    width: 70%;
+}
+
+.segmentB{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.segmentB h3{
+    color: white;
+    text-align: center;
+    padding-top: 4vh;
+}
+
+.segmentB img{
+    width: 70%;
+}
+
+}
+
+
+
+
+/* Tablet Styles*/
+
+
+@media (min-width:700px){
+    .one h4,p{
+        font-size: 1.6rem;
+    }
+
+    .list h3{
+        font-size: 1.6rem;
+    }
+
+    .cards{
+        margin: 4.5rem;
+    }
+
+    .segments{
+        display: flex;      
+    }
+  
+}
+
+
+/* Desktop Styles*/
+
+@media (min-width:900px) {
+
+    nav{
+        justify-content: left;
+        padding-left: 10vh;
+    }
+
+    .one h4,p{
+        display: none;
+    }
+
+    .hero{
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+   .two label{
+    font-size: 1rem;
+   }
+   .two input[type="text"]{
+    font-size: 1rem;
+   }
+
+   .two form{
+    padding: 0rem;
+   }
+    
+    .two{
+        padding: 2rem;
+    }
+    .two .button{
+        width: 100%;
+    }
+
+
+    .list h3{
+        font-size: 1rem;
+        margin-top: 8vh;
+    }
+
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card{
+        border-radius: 70% 30% 98% 2% / 59% 100% 0% 41% ;
+    }
+
+    .segments{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+  
+    .segmentA img{
+        width: 40%;
+    }
+    .segmentB img{
+        width: 40%;
+    }
+
+    
+}
